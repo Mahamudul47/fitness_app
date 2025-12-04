@@ -26,7 +26,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   String? photoUrl;
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: _buildContext(context));
+    return Scaffold(body: _buildContext(context))  ;
   }
 
   BlocProvider<SettingsBloc> _buildContext(BuildContext context) {

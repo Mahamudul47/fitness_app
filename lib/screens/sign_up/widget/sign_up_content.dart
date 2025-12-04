@@ -28,7 +28,7 @@ class SignUpContent extends StatelessWidget {
               buildWhen: (_, currState) => currState is LoadingState || currState is NextTabBarPageState || currState is ErrorState,
               builder: (context, state) {
                 if (state is LoadingState) {
-                  return _createLoading();
+                  return _createLoading()  ;
                 } else if (state is NextTabBarPageState || state is ErrorState) {
                   return SizedBox();
                 }
@@ -63,7 +63,7 @@ class SignUpContent extends StatelessWidget {
   }
 
   Widget _createLoading() {
-    return FitnessLoading();
+    return FitnessLoading()  ;
   }
 
   Widget _createTitle() {
